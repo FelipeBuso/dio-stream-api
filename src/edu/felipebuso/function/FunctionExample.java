@@ -16,7 +16,7 @@ public class FunctionExample {
         Function<Integer, Integer> dobrar = numero -> numero * 2;
 
         List<Integer> numerosDobrados = numeros.stream()
-                .map(dobrar)
+                .map(n -> n * 2)
                 .toList();
 
         numerosDobrados.forEach(System.out::println);
